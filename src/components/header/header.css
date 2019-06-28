@@ -1,0 +1,91 @@
+/* Обертка шапки */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 84px;
+}
+
+/* Название приложения */
+.header-title {
+    white-space: nowrap;
+    width: 236px;
+    height: 33px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Обертка панели */
+.header-panel {
+    display: flex;
+    align-items: center;
+}
+
+/* Элементы панели переходов */
+.header-panel__element_cube {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 58px;
+    margin-right: 36px;
+}
+
+.header-panel__element_cube:hover .cube{
+    border: 2px solid black;
+}
+
+/* Стили для кубов */
+.cube-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Сами кубики */
+.cube {
+    border: 2px solid #aaaaaa;
+    display: block;
+    min-width: 15px;
+    min-height: 15px;
+    transition: 0.5s;
+}
+
+/* Стили для бургер - иконки */
+.header-panel__element_burger {
+    width: 42px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.header-panel__element_burger:hover .short,
+.header-panel__element_burger:hover .long {
+    background-color: black
+}
+
+/* Строчка из бургер - иконки */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* элемнты строки */
+.short {
+    width: 4px;
+    height: 2px;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.long {
+    width: 28px;
+    height: 2px;
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
